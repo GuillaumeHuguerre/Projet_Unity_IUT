@@ -7,4 +7,6 @@ static public class constantes{
     public static readonly int NBRLEMMINGS = 5;
     public static readonly int NBRVIVANT = NBRLEMMINGS;
     public static readonly int NBRSAUVES = 0;
+    //Action block
+    public static readonly bool block = false;
 }
