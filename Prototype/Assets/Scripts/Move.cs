@@ -16,6 +16,7 @@ public class Move : MonoBehaviour
 
     private float climbSpeed;
     public bool isClimber;
+    public bool btnClimbClicked;
 
     void Awake()
     {
@@ -27,6 +28,7 @@ public class Move : MonoBehaviour
     {
         climbSpeed = constantes.CLIMBSPEED;
         speed = constantes.SPEED;
+        btnClimbClicked = constantes.BTNSTART;
 
         p_sr = this.GetComponent<SpriteRenderer>();
         _anim = gameObject.GetComponent<Animator>();
@@ -74,6 +76,18 @@ public class Move : MonoBehaviour
         }
     }
 
+    void OnMouseDown()
+    {
+        if (btnClimbClicked)
+        {
+            isClimber = true;
+            btnClimbClicked = false;
+        }
+    }
+    void ClimbClicked()
+    {
+        btnClimbClicked = true;
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Wall" && isClimber == true)
@@ -82,4 +96,6 @@ public class Move : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, climbSpeed);
         }
     }
+
+
 }

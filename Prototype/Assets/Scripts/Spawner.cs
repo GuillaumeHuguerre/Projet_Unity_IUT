@@ -9,13 +9,13 @@ public class Spawner : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        InvokeRepeating("CreateNewObstacle", 2.0f, 1.0f);
+        InvokeRepeating("CreateNewLemming", 2.0f, 1.0f);
         Temps = constantes.TEMPS;
         nbrLemming = constantes.NBRLEMMINGS;
     }
 
     // Update is called once per frame
-    void CreateNewObstacle()
+    void CreateNewLemming()
     {
         if (nbrLemming != 0)
         {
