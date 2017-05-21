@@ -14,10 +14,6 @@ public class Move : MonoBehaviour
     private bool pousseeEnCours;
     private bool pousseInverse=false;
 
-    private float climbSpeed;
-    public bool isClimber;
-    public bool btnClimbClicked;
-
     void Awake()
     {
         if (MAX_SPEED <= 0) MAX_SPEED = 2;
@@ -26,9 +22,7 @@ public class Move : MonoBehaviour
 
     void Start()
     {
-        climbSpeed = constantes.CLIMBSPEED;
         speed = constantes.SPEED;
-        btnClimbClicked = constantes.BTNSTART;
 
         p_sr = this.GetComponent<SpriteRenderer>();
         _anim = gameObject.GetComponent<Animator>();
@@ -75,27 +69,4 @@ public class Move : MonoBehaviour
             transform.Translate(Vector3.right * -speed * Time.deltaTime);
         }
     }
-
-    void OnMouseDown()
-    {
-        if (btnClimbClicked)
-        {
-            isClimber = true;
-            btnClimbClicked = false;
-        }
-    }
-    void ClimbClicked()
-    {
-        btnClimbClicked = true;
-    }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Wall" && isClimber == true)
-        {
-            transform.Translate(Vector3.up * climbSpeed * Time.deltaTime);
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, climbSpeed);
-        }
-    }
-
-
 }
