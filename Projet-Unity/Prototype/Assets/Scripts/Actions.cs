@@ -60,8 +60,8 @@ public class Actions : MonoBehaviour
         //Block
         if (btnBlockClicked)
         {
-            btnBlockClicked = false;
-            gameObject.layer = 8;
+            //btnBlockClicked = false;
+            //gameObject.layer = 8;
             //mettre la vitesse à 0
         }
 

@@ -39,6 +39,13 @@ public class MouvementScript : MonoBehaviour
             rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime + speed, rig.velocity.y);
         }
     }
+    private void Update()
+    {
+        if(this.GetComponent<Actions>().btnBlockClicked)
+        {
+            this.GetComponent<Actions>().btnBlockClicked = false;
+        }
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
