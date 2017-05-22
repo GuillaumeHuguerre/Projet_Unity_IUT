@@ -78,9 +78,30 @@ public class Actions : MonoBehaviour {
         }
     }
 
+    void OnCollisionEnter2D(Collider2D other)
+    {
+        //Climb
+        if (other.tag == "Wall" && isClimber == true)
+        {
+            print("is climbe == true et contact avec mur");
+            transform.Translate(Vector3.up * climbSpeed * Time.deltaTime);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, climbSpeed);
+        }
+
+        //Push
+        if (btnPushClicked)
+        {
+            if (other.tag == "Box" && isPusher == true)
+            {
+                //Action pousser
+            }
+        }
+    }
+
 
     void ClimbClicked()
     {
+        print("btn climb clicker");
         btnClimbClicked = true;
         btnBlockClicked = false;
         btnPushClicked = false;
@@ -112,24 +133,7 @@ public class Actions : MonoBehaviour {
         btnPushClicked = false;
         btnDieClicked = true;
     }
+    
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        //Climb
-        if (other.tag == "Wall" && isClimber == true)
-        {
-            print("is climbe == true et contact avec mur");
-            transform.Translate(Vector3.up * climbSpeed * Time.deltaTime);
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, climbSpeed);
-        }
-
-        //Push
-        if (btnPushClicked)
-        {
-            if (other.tag == "Box" && isPusher == true)
-            {
-                //Action pousser
-            }
-        }
-     }
+   
 }
