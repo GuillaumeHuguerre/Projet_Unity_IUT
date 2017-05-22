@@ -10,7 +10,6 @@ public class Spawner : MonoBehaviour {
     // Use this for initialization
     void Start () {
         InvokeRepeating("CreateNewLemming", 2.0f, 1.0f);
-        InvokeRepeating("CreateNewLemming", 1.0f, 1.0f);
         Temps = constantes.TEMPS;
         nbrLemming = constantes.NBRLEMMINGS;
     }
