@@ -16,4 +16,7 @@ static public class constantes{
     public static readonly bool ACTION = false;
 
     public static readonly bool BTNSTART = false;
+	
+	 //Activate
+    static public float OPENSPEED = 1f; //vitesse de déplacement de la porte
 }

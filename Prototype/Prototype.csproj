@@ -77,8 +77,11 @@
     <Compile Include="Assets\Scripts\End.cs" />
     <Compile Include="Assets\Scripts\MouvementScript.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
+    <Compile Include="Assets\Scripts\Open.cs" />
+    <Compile Include="Assets\Scripts\Push.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Variables.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
