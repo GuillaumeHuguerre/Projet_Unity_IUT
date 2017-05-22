@@ -2,7 +2,8 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class Actions : MonoBehaviour {
+public class Actions : MonoBehaviour
+{
 
     public Button Climb;
     public Button Block;
@@ -24,7 +25,8 @@ public class Actions : MonoBehaviour {
     //Die
     public bool btnDieClicked;
 
-    void Start () {
+    void Start()
+    {
         climbSpeed = constantes.CLIMBSPEED;
 
         btnClimbClicked = constantes.BTNSTART;
@@ -45,7 +47,7 @@ public class Actions : MonoBehaviour {
         btnPush.onClick.AddListener(PushClicked);
         btnDie.onClick.AddListener(DieClicked);
     }
-   
+
     void OnMouseDown()
     {
         //Climb
@@ -85,7 +87,7 @@ public class Actions : MonoBehaviour {
         btnBlockClicked = false;
         btnPushClicked = false;
         btnDieClicked = false;
-        
+
     }
 
     void BlockClicked()
@@ -116,25 +118,16 @@ public class Actions : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision)
     {
         //Climb
-<<<<<<< HEAD
         //if (other.tag == "Wall" && isClimber == true)
         //{
         //    transform.Translate(Vector3.up * climbSpeed * Time.deltaTime);
         //    GetComponent<Rigidbody2D>().velocity = new Vector2(0, climbSpeed);
         //}
-=======
-        if (other.tag == "Wall" && isClimber == true)
-        {
-            print("is climbe == true et contact avec mur");
-            transform.Translate(Vector3.up * climbSpeed * Time.deltaTime);
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, climbSpeed);
-        }
->>>>>>> origin/Nicolas
 
         //Push
         if (btnPushClicked)
-        {            
-              
+        {
+
         }
-     }
+    }
 }

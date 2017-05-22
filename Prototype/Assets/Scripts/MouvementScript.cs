@@ -3,11 +3,13 @@ using System.Collections;
 
 
 
-public class MouvementScript : MonoBehaviour {
+public class MouvementScript : MonoBehaviour
+{
 
     private float speed;
     private Rigidbody2D rig;
-    [HideInInspector]public bool direction;
+    [HideInInspector]
+    public bool direction;
     private bool sens;
     private float hauteur;
 
@@ -30,7 +32,7 @@ public class MouvementScript : MonoBehaviour {
         else speed = -2.0f;
         if (sens && this.GetComponent<BoxCollider2D>().bounds.min.y <= hauteur)
         {
-            rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime, rig.velocity.y + Mathf.Abs(speed/10));
+            rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime, rig.velocity.y + Mathf.Abs(speed / 10));
         }
         else
         {
@@ -65,7 +67,7 @@ public class MouvementScript : MonoBehaviour {
         {
             if (collision.contacts[0].normal == new Vector2(-1, 0) || collision.contacts[0].normal == new Vector2(1, 0))
             {
-                
+
                 sens = true;
                 hauteur = collision.gameObject.GetComponent<BoxCollider2D>().bounds.max.y;
                 if (direction == true) direction = false;
