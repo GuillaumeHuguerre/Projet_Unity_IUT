@@ -116,11 +116,20 @@ public class Actions : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision)
     {
         //Climb
+<<<<<<< HEAD
         //if (other.tag == "Wall" && isClimber == true)
         //{
         //    transform.Translate(Vector3.up * climbSpeed * Time.deltaTime);
         //    GetComponent<Rigidbody2D>().velocity = new Vector2(0, climbSpeed);
         //}
+=======
+        if (other.tag == "Wall" && isClimber == true)
+        {
+            print("is climbe == true et contact avec mur");
+            transform.Translate(Vector3.up * climbSpeed * Time.deltaTime);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, climbSpeed);
+        }
+>>>>>>> origin/Nicolas
 
         //Push
         if (btnPushClicked)
