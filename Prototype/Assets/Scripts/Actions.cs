@@ -118,6 +118,7 @@ public class Actions : MonoBehaviour {
         //Climb
         if (other.tag == "Wall" && isClimber == true)
         {
+            print("is climbe == true et contact avec mur");
             transform.Translate(Vector3.up * climbSpeed * Time.deltaTime);
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, climbSpeed);
         }
