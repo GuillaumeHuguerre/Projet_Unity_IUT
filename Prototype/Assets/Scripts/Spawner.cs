@@ -4,22 +4,25 @@ using System.Collections;
 public class Spawner : MonoBehaviour {
 
     public GameObject lemming;
+    private GameObject _spawnedObj;
     public float Temps;
     private int nbrLemming;
 
     // Use this for initialization
     void Start () {
-        InvokeRepeating("CreateNewLemming", 2.0f, 1.0f);
         Temps = constantes.TEMPS;
+        InvokeRepeating("CreateNewLemming", Temps, 1.0f);       
         nbrLemming = constantes.NBRLEMMINGS;
+
     }
 
     // Update is called once per frame
-    void CreateNewLemming()
+    private void CreateNewLemming()
     {
         if (nbrLemming != 0)
         {
             Instantiate(lemming, new Vector3(-5f, 0f, 0f), Quaternion.identity);
+            
             --nbrLemming;
         }
     }

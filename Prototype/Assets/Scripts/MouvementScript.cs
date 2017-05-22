@@ -12,7 +12,7 @@ public class MouvementScript : MonoBehaviour {
     private void Awake()
     {
         speed = 1f;
-        rig = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+        rig = this.GetComponent<Rigidbody2D>();
         direction = true;
     }
 

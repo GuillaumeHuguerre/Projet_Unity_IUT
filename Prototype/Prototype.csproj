@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Actions.cs" />
     <Compile Include="Assets\Scripts\Block.cs" />
+    <Compile Include="Assets\Scripts\ButtonKill.cs" />
     <Compile Include="Assets\Scripts\Constant.cs" />
     <Compile Include="Assets\Scripts\DeathZone.cs" />
     <Compile Include="Assets\Scripts\End.cs" />

@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Actions : MonoBehaviour {
+
+    public Button Climb;
+    public Button Block;
+    public Button Push;
+    public Button Die;
 
     //Climb
     private float climbSpeed;
@@ -28,8 +34,18 @@ public class Actions : MonoBehaviour {
 
         isClimber = false;
         isPusher = false;
-    }
 
+        Button btnClimb = Climb.GetComponent<Button>();
+        Button btnBlock = Block.GetComponent<Button>();
+        Button btnPush = Push.GetComponent<Button>();
+        Button btnDie = Die.GetComponent<Button>();
+
+        btnClimb.onClick.AddListener(ClimbClicked);
+        btnBlock.onClick.AddListener(BlockClicked);
+        btnPush.onClick.AddListener(PushClicked);
+        btnDie.onClick.AddListener(DieClicked);
+    }
+   
     void OnMouseDown()
     {
         //Climb
@@ -69,6 +85,7 @@ public class Actions : MonoBehaviour {
         btnBlockClicked = false;
         btnPushClicked = false;
         btnDieClicked = false;
+        
     }
 
     void BlockClicked()
@@ -89,6 +106,7 @@ public class Actions : MonoBehaviour {
 
     void DieClicked()
     {
+        print("test btn die");
         btnClimbClicked = false;
         btnBlockClicked = false;
         btnPushClicked = false;
