@@ -30,10 +30,30 @@ public class MouvementScript : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Wall"))
+        if (this.GetComponent<Actions>().isPusher)
         {
-            if (direction == true) direction = false;
-            else direction = true;
+            if (collision.gameObject.CompareTag("Box")) Debug.LogWarning("Ah");
+            else
+            {
+                if (collision.contacts[0].normal == new Vector2(-1, 0) || collision.contacts[0].normal == new Vector2(1, 0))
+                {
+                    if (direction == true) direction = false;
+                    else direction = true;
+                }
+            }
+
+        }
+        else
+        {
+            if (collision.contacts[0].normal == new Vector2(-1, 0) || collision.contacts[0].normal == new Vector2(1, 0))
+            {
+                if (direction == true) direction = false;
+                else direction = true;
+            }
         }
     }
+
+
+
+
 }

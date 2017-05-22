@@ -10,7 +10,7 @@ public class Open : MonoBehaviour
     void Start()
     {
         variables.doorIsActivated = false;
-        openSpeed = constantes.OPENSPEED;
+        openSpeed = 2.0f;
 
     }
 

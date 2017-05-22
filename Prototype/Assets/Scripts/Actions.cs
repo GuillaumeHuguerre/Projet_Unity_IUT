@@ -123,9 +123,12 @@ public class Actions : MonoBehaviour {
         }
 
         //Push
-        if(other.tag == "Box" && isPusher == true)
+        if (btnPushClicked)
         {
-            //Action pousser
+            if (other.tag == "Box" && isPusher == true)
+            {
+                //Action pousser
+            }
         }
-    }
+     }
 }
