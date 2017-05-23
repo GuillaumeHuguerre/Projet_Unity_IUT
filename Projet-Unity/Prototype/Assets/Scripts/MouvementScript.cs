@@ -32,19 +32,24 @@ public class MouvementScript : MonoBehaviour
         else speed = -2.0f;
         if (sens && this.GetComponent<BoxCollider2D>().bounds.min.y <= hauteur)
         {
-            rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime, rig.velocity.y + Mathf.Abs(speed / 10));
-        }
+           
+            rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime, rig.velocity.y + Mathf.Abs(speed/10));
+        }                
         else
+            {
+                rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime + speed, rig.velocity.y);
+            }
+
+        if (this.GetComponent<Actions>().isBlock)
         {
-            rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime + speed, rig.velocity.y);
+
+            gameObject.layer = 8;
+            rig.constraints = rig.constraints | RigidbodyConstraints2D.FreezePositionX;
+
+
         }
-    }
-    private void Update()
-    {
-        if(this.GetComponent<Actions>().btnBlockClicked)
-        {
-            this.GetComponent<Actions>().btnBlockClicked = false;
-        }
+
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

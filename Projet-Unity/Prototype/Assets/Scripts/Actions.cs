@@ -4,11 +4,13 @@ using System.Collections;
 
 public class Actions : MonoBehaviour
 {
+    private Rigidbody2D rig;
 
     public Button Climb;
     public Button Block;
     public Button Push;
     public Button Die;
+    public Button Activate;
 
     //Climb
     private float climbSpeed;
@@ -17,6 +19,7 @@ public class Actions : MonoBehaviour
 
     //Block
     public bool btnBlockClicked;
+    public bool isBlock;
 
     //Push
     public bool isPusher;
@@ -25,27 +28,38 @@ public class Actions : MonoBehaviour
     //Die
     public bool btnDieClicked;
 
+    //Activate
+    public bool isActivated;
+    public bool btnActivateClicked;
+
     void Start()
     {
+        rig = this.GetComponent<Rigidbody2D>();
+
         climbSpeed = constantes.CLIMBSPEED;
 
         btnClimbClicked = constantes.BTNSTART;
         btnBlockClicked = constantes.BTNSTART;
         btnPushClicked = constantes.BTNSTART;
         btnDieClicked = constantes.BTNSTART;
+        btnActivateClicked = constantes.BTNSTART;
 
+        isBlock = false;
         isClimber = false;
         isPusher = false;
+        isActivated = false;
 
         Button btnClimb = Climb.GetComponent<Button>();
         Button btnBlock = Block.GetComponent<Button>();
         Button btnPush = Push.GetComponent<Button>();
         Button btnDie = Die.GetComponent<Button>();
+        Button btnActivate = Activate.GetComponent<Button>();
 
         btnClimb.onClick.AddListener(ClimbClicked);
         btnBlock.onClick.AddListener(BlockClicked);
         btnPush.onClick.AddListener(PushClicked);
         btnDie.onClick.AddListener(DieClicked);
+        btnActivate.onClick.AddListener(ActivateClicked);
     }
 
     void OnMouseDown()
@@ -59,10 +73,8 @@ public class Actions : MonoBehaviour
 
         //Block
         if (btnBlockClicked)
-        {
-            //btnBlockClicked = false;
-            //gameObject.layer = 8;
-            //mettre la vitesse à 0
+        {           
+            isBlock = true;         
         }
 
         //Push
@@ -78,8 +90,14 @@ public class Actions : MonoBehaviour
             btnDieClicked = false;
             Destroy(gameObject);
         }
-    }
 
+        //Activate
+        if (btnActivateClicked)
+        {
+            btnActivateClicked = false;
+            isActivated = true;
+        }
+    }
 
     void ClimbClicked()
     {
@@ -87,6 +105,7 @@ public class Actions : MonoBehaviour
         btnBlockClicked = false;
         btnPushClicked = false;
         btnDieClicked = false;
+        btnActivateClicked = false;
 
     }
 
@@ -96,6 +115,7 @@ public class Actions : MonoBehaviour
         btnBlockClicked = true;
         btnPushClicked = false;
         btnDieClicked = false;
+        btnActivateClicked = false;
     }
 
     void PushClicked()
@@ -104,30 +124,34 @@ public class Actions : MonoBehaviour
         btnBlockClicked = false;
         btnPushClicked = true;
         btnDieClicked = false;
+        btnActivateClicked = false;
     }
 
     void DieClicked()
     {
-        print("test btn die");
         btnClimbClicked = false;
         btnBlockClicked = false;
         btnPushClicked = false;
         btnDieClicked = true;
+        btnActivateClicked = false;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void ActivateClicked()
     {
-        //Climb
-        //if (other.tag == "Wall" && isClimber == true)
-        //{
-        //    transform.Translate(Vector3.up * climbSpeed * Time.deltaTime);
-        //    GetComponent<Rigidbody2D>().velocity = new Vector2(0, climbSpeed);
-        //}
-
-        //Push
-        if (btnPushClicked)
+        btnClimbClicked = false;
+        btnBlockClicked = false;
+        btnPushClicked = false;
+        btnDieClicked = false;
+        btnActivateClicked = true;
+    }
+    void OnTriggerStay2D(Collider2D other)
+    {
+        //Activate
+        if (other.tag == "Button" && isActivated == true)
         {
-
+            variables.doorIsActivated = true;
+            rig.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         }
     }
+
 }

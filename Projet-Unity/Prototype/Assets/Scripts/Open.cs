@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Open : MonoBehaviour
 {
-    Vector3 target = new Vector3(14, 3, 0);
+    Vector3 target = new Vector3(15, 3, 0);
     public float openSpeed;
 
     // Use this for initialization
