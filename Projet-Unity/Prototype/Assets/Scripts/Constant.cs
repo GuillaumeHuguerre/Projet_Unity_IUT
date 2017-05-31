@@ -2,7 +2,6 @@
 static public class constantes{
     //Speed
     public static readonly float SPEED = 0f;
-    public static readonly float CLIMBSPEED = 3f;
     
     //Spawn
     public static readonly float TEMPS = 2f;
