@@ -6,6 +6,8 @@ public class Actions : MonoBehaviour
 {
     private Rigidbody2D rig;
 
+    public GameObject score;
+
     public Button Climb;
     public Button Block;
     public Button Push;
@@ -120,12 +122,24 @@ public class Actions : MonoBehaviour
         }
         if (variables.btnDieClicked)
         {
+            score.GetComponent<Score>().Death();
             Destroy(gameObject);
         }
     }
 
     void ClimbClicked()
     {
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.red;
         variables.btnClimbClicked = true;
         variables.btnBlockClicked = false;
         variables.btnPushClicked = false;
@@ -141,6 +155,18 @@ public class Actions : MonoBehaviour
 
     void BlockClicked()
     {
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.red;
         variables.btnBlockClicked = true;
         variables.btnClimbClicked = false;
         variables.btnPushClicked = false;
@@ -155,6 +181,18 @@ public class Actions : MonoBehaviour
 
     void PushClicked()
     {
+        Climb.GetComponent<Image>().color = Color.white;
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.red;
         variables.btnPushClicked = true;
         variables.btnClimbClicked = false;
         variables.btnBlockClicked = false;
@@ -170,6 +208,17 @@ public class Actions : MonoBehaviour
 
     void DieClicked()
     {
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.red;
         variables.btnDieClicked = true;
         variables.btnClimbClicked = false;
         variables.btnBlockClicked = false;
@@ -184,6 +233,17 @@ public class Actions : MonoBehaviour
 
     void ActivateClicked()
     {
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.red;
         variables.btnActivateClicked = true;
         variables.btnClimbClicked = false;
         variables.btnBlockClicked = false;
@@ -197,6 +257,17 @@ public class Actions : MonoBehaviour
     }
     void JeterClicked()
     {
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.red;
         variables.btnClimbClicked = false;
         variables.btnBlockClicked = false;
         variables.btnPushClicked = false;
@@ -211,6 +282,17 @@ public class Actions : MonoBehaviour
 
     void CasserClicked()
     {
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.red;
         variables.btnCasserClicked = true;
         variables.btnClimbClicked = false;
         variables.btnBlockClicked = false;
@@ -225,6 +307,17 @@ public class Actions : MonoBehaviour
 
     void BuildClicked()
     {
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Build.GetComponent<Image>().color = Color.red;
         variables.btnBuildClicked = true;
         variables.btnClimbClicked = false;
         variables.btnBlockClicked = false;
@@ -240,6 +333,17 @@ public class Actions : MonoBehaviour
 
     void MinerClicked()
     {
+        Build.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.red;
         variables.btnMinerClicked = true;
         variables.btnClimbClicked = false;
         variables.btnBlockClicked = false;
@@ -254,6 +358,17 @@ public class Actions : MonoBehaviour
 
     void CreuserClicked()
     {
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.red;
         variables.btnCreuserClicked = true;
         variables.btnClimbClicked = false;
         variables.btnBlockClicked = false;
