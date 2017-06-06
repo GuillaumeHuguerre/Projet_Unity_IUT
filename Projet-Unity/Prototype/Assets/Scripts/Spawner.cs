@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Spawner : MonoBehaviour {
@@ -9,6 +10,22 @@ public class Spawner : MonoBehaviour {
     private int nbrLemming;
     private float Cx;
     private float Cy;
+
+
+
+    public Button Climb;
+    public Button Block;
+    public Button Push;
+    public Button Die;
+    public Button Activate;
+    public Button Jeter;
+    public Button Casser;
+    public Button Build;
+    public Button Miner;
+    public Button Creuser;
+
+
+
 
     // Use this for initialization
     void Start () {
@@ -26,8 +43,22 @@ public class Spawner : MonoBehaviour {
     {
         if (nbrLemming != 0)
         {
-            Instantiate(lemming, new Vector2(Cx, Cy), Quaternion.identity);
-            
+            GameObject obj = Instantiate(lemming, new Vector2(Cx, Cy), Quaternion.identity) as GameObject ;
+
+            Actions a = obj.GetComponent<Actions>();
+            a.Block = Block;
+            a.Climb = Climb;
+            a.Push = Push; 
+            a.Die = Die;
+            a.Activate = Activate;
+            a.Jeter = Jeter;
+            a.Casser = Casser;
+            a.Build = Build;
+            a.Miner = Miner;
+            a.Creuser = Creuser;
+
+
+
             --nbrLemming;
         }
     }
