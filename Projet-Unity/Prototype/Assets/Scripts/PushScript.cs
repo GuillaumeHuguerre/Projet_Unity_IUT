@@ -17,13 +17,6 @@ public class PushScript : MonoBehaviour {
             }
 
         }
-        else
-        {
-            if (collision.contacts[0].normal == new Vector2(-1, 0) || collision.contacts[0].normal == new Vector2(1, 0))
-            {
-                if (this.GetComponent<MouvementScript>().direction == true) this.GetComponent<MouvementScript>().direction = false;
-                else this.GetComponent<MouvementScript>().direction = true;
-            }
-        }
+        
     }
 }

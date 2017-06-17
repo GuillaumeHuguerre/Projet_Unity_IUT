@@ -6,9 +6,12 @@ using System.Collections;
 public class MouvementScript : MonoBehaviour
 {
 
-    [HideInInspector]public float speed;
+   public float speed;
     private Rigidbody2D rig;
-    [HideInInspector]public bool direction;
+   public bool direction;
+    [HideInInspector]public bool sens;
+    [HideInInspector]public float hauteur;
+
 
     private void Awake()
     {
@@ -24,13 +27,27 @@ public class MouvementScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (direction == true) speed = 2.0f;
-        else speed = -2.0f;
+        if (direction == false) speed = -speed;
+
+        
+        {
+            rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime + this.GetComponent<MouvementScript>().speed, rig.velocity.y);
+        }
     }
 
 
 
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!this.GetComponent<Actions>().isPusher && !this.GetComponent<Actions>().isBlock)
+        {
+            if (collision.contacts[0].normal == new Vector2(-1, 0) || collision.contacts[0].normal == new Vector2(1, 0))
+            {
+                if (direction == true) direction = false;
+               else direction = true;
+            }
+        }
+    }
 
 }
