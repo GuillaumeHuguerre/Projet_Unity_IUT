@@ -5,13 +5,14 @@ using System.Collections;
 public class Spawner : MonoBehaviour {
 
     public GameObject lemming;
+    ParticleSystem
     private BoxCollider2D _spawnedObj;
     public float Temps;
     private int nbrLemming;
     private float Cx;
     private float Cy;
 
-
+    public GameObject score;
 
     public Button Climb;
     public Button Block;
@@ -56,6 +57,7 @@ public class Spawner : MonoBehaviour {
             a.Build = Build;
             a.Miner = Miner;
             a.Creuser = Creuser;
+            a.score = score;
 
 
 
