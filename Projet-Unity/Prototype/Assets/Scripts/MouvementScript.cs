@@ -42,7 +42,7 @@ public class MouvementScript : MonoBehaviour
     {
         if (speed >= 2f )
         {
-            Debug.LogWarning("Aizee");
+
             speed = 2f;
         }
 

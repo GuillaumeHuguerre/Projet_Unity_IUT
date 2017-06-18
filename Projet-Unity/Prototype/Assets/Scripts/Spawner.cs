@@ -27,7 +27,6 @@ public class Spawner : MonoBehaviour {
         if (nbrLemming != 0)
         {
             Instantiate(lemming, new Vector2(Cx, Cy), Quaternion.identity);
-            
             --nbrLemming;
         }
     }
