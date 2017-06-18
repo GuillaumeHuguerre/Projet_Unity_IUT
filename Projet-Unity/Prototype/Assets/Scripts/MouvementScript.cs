@@ -30,9 +30,9 @@ public class MouvementScript : MonoBehaviour
         if (direction == false) speed = -speed;
 
         
-        {
-            rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime + this.GetComponent<MouvementScript>().speed, rig.velocity.y);
-        }
+        rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime + this.GetComponent<MouvementScript>().speed, rig.velocity.y);
+
+
     }
 
 
@@ -40,6 +40,12 @@ public class MouvementScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (speed >= 2f )
+        {
+            Debug.LogWarning("Aizee");
+            speed = 2f;
+        }
+
         if (!this.GetComponent<Actions>().isPusher && !this.GetComponent<Actions>().isBlock)
         {
             if (collision.contacts[0].normal == new Vector2(-1, 0) || collision.contacts[0].normal == new Vector2(1, 0))
