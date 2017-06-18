@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ConstruireScript.cs" />
+    <Compile Include="Assets\LemmingsSong.cs" />
     <Compile Include="Assets\Scripts\Actions.cs" />
     <Compile Include="Assets\Scripts\BlockScript.cs" />
     <Compile Include="Assets\Scripts\ClimbScript.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Variables.cs" />
+    <Compile Include="Assets\SongLevel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

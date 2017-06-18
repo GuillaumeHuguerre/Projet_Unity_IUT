@@ -6,6 +6,10 @@ public class Actions : MonoBehaviour
 {
     private Rigidbody2D rig;
 
+
+    public GameObject randomSong;
+
+
     public GameObject score;
 
     public Button Climb;
@@ -32,6 +36,7 @@ public class Actions : MonoBehaviour
 
     void Start()
     {
+
         rig = this.GetComponent<Rigidbody2D>();
 
         isBlock = false;
@@ -72,7 +77,8 @@ public class Actions : MonoBehaviour
         if (!isBlock)
         {
             if (!isJeter)
-            { 
+            {
+
                 if (variables.btnClimbClicked)
                 {
                     isClimber = true;
@@ -123,7 +129,9 @@ public class Actions : MonoBehaviour
         if (variables.btnDieClicked)
         {
             score.GetComponent<Score>().Death();
+            new WaitForSecondsRealtime(2);
             Destroy(gameObject);
+
         }
     }
 
@@ -382,7 +390,7 @@ public class Actions : MonoBehaviour
     }
 
 
-
+    
     void OnTriggerStay2D(Collider2D other)
     {
         //Activate
