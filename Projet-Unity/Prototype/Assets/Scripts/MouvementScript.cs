@@ -6,12 +6,18 @@ using System.Collections;
 public class MouvementScript : MonoBehaviour
 {
 
+<<<<<<< HEAD
    public float speed;
     private Rigidbody2D rig;
    public bool direction;
     [HideInInspector]public bool sens;
     [HideInInspector]public float hauteur;
 
+=======
+    [HideInInspector]public float speed;
+    private Rigidbody2D rig;
+    [HideInInspector]public bool direction;
+>>>>>>> refs/remotes/origin/Guillaume
 
     private void Awake()
     {
@@ -27,17 +33,23 @@ public class MouvementScript : MonoBehaviour
 
     void FixedUpdate()
     {
+<<<<<<< HEAD
         if (direction == false) speed = -speed;
 
         
         rig.velocity = new Vector2(rig.velocity.x * Time.deltaTime + this.GetComponent<MouvementScript>().speed, rig.velocity.y);
 
 
+=======
+        if (direction == true) speed = 2.0f;
+        else speed = -2.0f;
+>>>>>>> refs/remotes/origin/Guillaume
     }
 
 
 
 
+<<<<<<< HEAD
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (speed >= 2f )
@@ -55,5 +67,8 @@ public class MouvementScript : MonoBehaviour
             }
         }
     }
+=======
+
+>>>>>>> refs/remotes/origin/Guillaume
 
 }

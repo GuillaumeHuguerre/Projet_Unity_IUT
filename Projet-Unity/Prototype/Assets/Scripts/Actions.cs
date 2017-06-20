@@ -6,10 +6,13 @@ public class Actions : MonoBehaviour
 {
     private Rigidbody2D rig;
 
+<<<<<<< HEAD
 
     public GameObject randomSong;
 
 
+=======
+>>>>>>> refs/remotes/origin/Guillaume
     public GameObject score;
 
     public Button Climb;
@@ -36,7 +39,10 @@ public class Actions : MonoBehaviour
 
     void Start()
     {
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/Guillaume
         rig = this.GetComponent<Rigidbody2D>();
 
         isBlock = false;
@@ -77,8 +83,12 @@ public class Actions : MonoBehaviour
         if (!isBlock)
         {
             if (!isJeter)
+<<<<<<< HEAD
             {
 
+=======
+            { 
+>>>>>>> refs/remotes/origin/Guillaume
                 if (variables.btnClimbClicked)
                 {
                     isClimber = true;
@@ -129,9 +139,13 @@ public class Actions : MonoBehaviour
         if (variables.btnDieClicked)
         {
             score.GetComponent<Score>().Death();
+<<<<<<< HEAD
             new WaitForSecondsRealtime(2);
             Destroy(gameObject);
 
+=======
+            Destroy(gameObject);
+>>>>>>> refs/remotes/origin/Guillaume
         }
     }
 
@@ -390,7 +404,11 @@ public class Actions : MonoBehaviour
     }
 
 
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> refs/remotes/origin/Guillaume
     void OnTriggerStay2D(Collider2D other)
     {
         //Activate
