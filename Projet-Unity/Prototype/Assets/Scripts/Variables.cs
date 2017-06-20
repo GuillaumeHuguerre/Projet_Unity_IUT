@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 ﻿
+=======
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+>>>>>>> refs/remotes/origin/Vincent_LAURENT
 
 public static class variables
 {
     static public bool doorIsActivated; //montre si le bouton est activé
+<<<<<<< HEAD
 
     //Permet de modifier score Script Score
     static public int nbrVivant;
@@ -20,4 +27,6 @@ public static class variables
     static public bool btnMinerClicked = false;
     static public bool btnCreuserClicked = false;
 
+=======
+>>>>>>> refs/remotes/origin/Vincent_LAURENT
 }

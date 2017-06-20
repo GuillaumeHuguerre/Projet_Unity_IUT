@@ -69,6 +69,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\ConstruireScript.cs" />
     <Compile Include="Assets\LemmingsSong.cs" />
     <Compile Include="Assets\Scripts\Actions.cs" />
@@ -86,6 +87,18 @@
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Variables.cs" />
     <Compile Include="Assets\SongLevel.cs" />
+=======
+    <Compile Include="Assets\Scripts\Actions.cs" />
+    <Compile Include="Assets\Scripts\Constant.cs" />
+    <Compile Include="Assets\Scripts\DeathZone.cs" />
+    <Compile Include="Assets\Scripts\End.cs" />
+    <Compile Include="Assets\Scripts\MouvementScript.cs" />
+    <Compile Include="Assets\Scripts\Move.cs" />
+    <Compile Include="Assets\Scripts\Open.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Variables.cs" />
+>>>>>>> refs/remotes/origin/Vincent_LAURENT
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

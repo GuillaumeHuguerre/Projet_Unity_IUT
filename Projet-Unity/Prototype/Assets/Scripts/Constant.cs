@@ -2,6 +2,10 @@
 static public class constantes{
     //Speed
     public static readonly float SPEED = 0f;
+<<<<<<< HEAD
+=======
+    public static readonly float CLIMBSPEED = 3f;
+>>>>>>> refs/remotes/origin/Vincent_LAURENT
     
     //Spawn
     public static readonly float TEMPS = 2f;
