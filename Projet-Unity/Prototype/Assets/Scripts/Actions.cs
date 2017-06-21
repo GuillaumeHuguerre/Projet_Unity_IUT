@@ -6,144 +6,409 @@ public class Actions : MonoBehaviour
 {
     private Rigidbody2D rig;
 
+
+    public GameObject randomSong;
+
+
+    public GameObject score;
+
     public Button Climb;
     public Button Block;
     public Button Push;
     public Button Die;
     public Button Activate;
+    public Button Jeter;
+    public Button Casser;
+    public Button Build;
+    public Button Miner;
+    public Button Creuser;
 
-    //Climb
-    private float climbSpeed;
+
     public bool isClimber;
-    public bool btnClimbClicked;
-
-    //Block
-    public bool btnBlockClicked;
     public bool isBlock;
-
-    //Push
     public bool isPusher;
-    public bool btnPushClicked;
-
-    //Die
-    public bool btnDieClicked;
-
-    //Activate
     public bool isActivated;
-    public bool btnActivateClicked;
+    public bool isJeter;
+    public bool isCasser;
+    public bool isBuild;
+    public bool isMiner;
+    public bool isCreuser;
 
+    Animator _anim;
+   
     void Start()
     {
+        _anim = this.GetComponent<Animator>();
         rig = this.GetComponent<Rigidbody2D>();
-
-        climbSpeed = constantes.CLIMBSPEED;
-
-        btnClimbClicked = constantes.BTNSTART;
-        btnBlockClicked = constantes.BTNSTART;
-        btnPushClicked = constantes.BTNSTART;
-        btnDieClicked = constantes.BTNSTART;
-        btnActivateClicked = constantes.BTNSTART;
 
         isBlock = false;
         isClimber = false;
         isPusher = false;
         isActivated = false;
+        isJeter = false;
+        isCasser = false;
+        isBuild = false;
+        isMiner = false;
+        isCreuser = false;
 
         Button btnClimb = Climb.GetComponent<Button>();
         Button btnBlock = Block.GetComponent<Button>();
         Button btnPush = Push.GetComponent<Button>();
         Button btnDie = Die.GetComponent<Button>();
         Button btnActivate = Activate.GetComponent<Button>();
+        Button btnJeter = Jeter.GetComponent<Button>();
+        Button btnCasser = Casser.GetComponent<Button>();
+        Button btnBuild = Build.GetComponent<Button>();
+        Button btnMiner = Miner.GetComponent<Button>();
+        Button btnCreuser = Creuser.GetComponent<Button>();
 
         btnClimb.onClick.AddListener(ClimbClicked);
         btnBlock.onClick.AddListener(BlockClicked);
         btnPush.onClick.AddListener(PushClicked);
         btnDie.onClick.AddListener(DieClicked);
         btnActivate.onClick.AddListener(ActivateClicked);
+        btnJeter.onClick.AddListener(JeterClicked);
+        btnCasser.onClick.AddListener(CasserClicked);
+        btnBuild.onClick.AddListener(BuildClicked);
+        btnMiner.onClick.AddListener(MinerClicked);
+        btnCreuser.onClick.AddListener(CreuserClicked);
     }
 
     void OnMouseDown()
     {
-        //Climb
-        if (btnClimbClicked)
+        if (!isBlock)
         {
-            isClimber = true;
-            btnClimbClicked = false;
-        }
+            if (!isJeter)
+            {
+                randomSong.GetComponent<SongLevel>().PlaySting();
+                if (variables.btnClimbClicked)
+                {
+                    isClimber = true;
+                    _anim.SetBool("isClimber", true);
 
-        //Block
-        if (btnBlockClicked)
-        {           
-            isBlock = true;         
-        }
+                }
 
-        //Push
-        if (btnPushClicked)
+                if (variables.btnBlockClicked)
+                {
+                    isBlock = true;
+                    _anim.SetBool("isBlocker", true);
+
+                }
+
+                if (variables.btnPushClicked)
+                {
+                    isPusher = true;
+                    _anim.SetBool("isPusher", true);
+
+                }
+
+                if (variables.btnActivateClicked)
+                {
+                    isActivated = true;
+                    _anim.SetBool("isActivater", true);
+
+                }
+                if (variables.btnJeterClicked)
+                {
+                    isJeter = true;
+                    _anim.SetBool("isThrower", true);
+
+                }
+
+                if (variables.btnCasserClicked)
+                {
+                    isCasser = true;
+                    _anim.SetBool("isBrocker", true);
+
+                }
+
+                if (variables.btnBuildClicked)
+                {
+                    isBuild = true;
+                    _anim.SetBool("isBuilder", true);
+ 
+                }
+
+                if (variables.btnMinerClicked)
+                {
+                    isMiner = true;
+                    _anim.SetBool("isMiner", true);
+
+                }
+
+                if (variables.btnCreuserClicked)
+                {
+                    isCreuser = true;
+                    _anim.SetBool("isDigger", true);
+
+                }
+            }
+        }
+        if (variables.btnDieClicked)
         {
-            isPusher = true;
-            btnPushClicked = false;
-        }
-
-        //Die
-        if (btnDieClicked)
-        {
-            btnDieClicked = false;
+            randomSong.GetComponent<SongLevel>().PlaySting();
+            score.GetComponent<Score>().Death();
             Destroy(gameObject);
-        }
 
-        //Activate
-        if (btnActivateClicked)
-        {
-            btnActivateClicked = false;
-            isActivated = true;
         }
     }
 
     void ClimbClicked()
     {
-        btnClimbClicked = true;
-        btnBlockClicked = false;
-        btnPushClicked = false;
-        btnDieClicked = false;
-        btnActivateClicked = false;
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.red;
+        variables.btnClimbClicked = true;
+        variables.btnBlockClicked = false;
+        variables.btnPushClicked = false;
+        variables.btnDieClicked = false;
+        variables.btnActivateClicked = false;
+        variables.btnJeterClicked = false;
+        variables.btnCasserClicked = false;
+        variables.btnBuildClicked = false;
+        variables.btnMinerClicked = false;
+        variables.btnCreuserClicked = false;
 
     }
 
     void BlockClicked()
     {
-        btnClimbClicked = false;
-        btnBlockClicked = true;
-        btnPushClicked = false;
-        btnDieClicked = false;
-        btnActivateClicked = false;
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.red;
+        variables.btnBlockClicked = true;
+        variables.btnClimbClicked = false;
+        variables.btnPushClicked = false;
+        variables.btnDieClicked = false;
+        variables.btnActivateClicked = false;
+        variables.btnJeterClicked = false;
+        variables.btnCasserClicked = false;
+        variables.btnBuildClicked = false;
+        variables.btnMinerClicked = false;
+        variables.btnCreuserClicked = false;
     }
 
     void PushClicked()
     {
-        btnClimbClicked = false;
-        btnBlockClicked = false;
-        btnPushClicked = true;
-        btnDieClicked = false;
-        btnActivateClicked = false;
+        Climb.GetComponent<Image>().color = Color.white;
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.red;
+        variables.btnPushClicked = true;
+        variables.btnClimbClicked = false;
+        variables.btnBlockClicked = false;
+        variables.btnDieClicked = false;
+        variables.btnActivateClicked = false;
+        variables.btnJeterClicked = false;
+        variables.btnCasserClicked = false;
+        variables.btnBuildClicked = false;
+        variables.btnMinerClicked = false;
+        variables.btnCreuserClicked = false;
+
     }
 
     void DieClicked()
     {
-        btnClimbClicked = false;
-        btnBlockClicked = false;
-        btnPushClicked = false;
-        btnDieClicked = true;
-        btnActivateClicked = false;
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.red;
+        variables.btnDieClicked = true;
+        variables.btnClimbClicked = false;
+        variables.btnBlockClicked = false;
+        variables.btnPushClicked = false;
+        variables.btnActivateClicked = false;
+        variables.btnJeterClicked = false;
+        variables.btnCasserClicked = false;
+        variables.btnBuildClicked = false;
+        variables.btnMinerClicked = false;
+        variables.btnCreuserClicked = false;
     }
 
     void ActivateClicked()
     {
-        btnClimbClicked = false;
-        btnBlockClicked = false;
-        btnPushClicked = false;
-        btnDieClicked = false;
-        btnActivateClicked = true;
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.red;
+        variables.btnActivateClicked = true;
+        variables.btnClimbClicked = false;
+        variables.btnBlockClicked = false;
+        variables.btnPushClicked = false;
+        variables.btnDieClicked = false;
+        variables.btnJeterClicked = false;
+        variables.btnCasserClicked = false;
+        variables.btnBuildClicked = false;
+        variables.btnMinerClicked = false;
+        variables.btnCreuserClicked = false;
     }
+    void JeterClicked()
+    {
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.red;
+        variables.btnClimbClicked = false;
+        variables.btnBlockClicked = false;
+        variables.btnPushClicked = false;
+        variables.btnDieClicked = false;
+        variables.btnActivateClicked = false;
+        variables.btnCasserClicked = false;
+        variables.btnBuildClicked = false;
+        variables.btnMinerClicked = false;
+        variables.btnCreuserClicked = false;
+        variables.btnJeterClicked = true;
+    }
+
+    void CasserClicked()
+    {
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.red;
+        variables.btnCasserClicked = true;
+        variables.btnClimbClicked = false;
+        variables.btnBlockClicked = false;
+        variables.btnPushClicked = false;
+        variables.btnDieClicked = false;
+        variables.btnActivateClicked = false;
+        variables.btnJeterClicked = false;
+        variables.btnBuildClicked = false;
+        variables.btnMinerClicked = false;
+        variables.btnCreuserClicked = false;
+    }
+
+    void BuildClicked()
+    {
+        Miner.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Build.GetComponent<Image>().color = Color.red;
+        variables.btnBuildClicked = true;
+        variables.btnClimbClicked = false;
+        variables.btnBlockClicked = false;
+        variables.btnPushClicked = false;
+        variables.btnDieClicked = false;
+        variables.btnActivateClicked = false;
+        variables.btnJeterClicked = false;
+        variables.btnCasserClicked = false;
+        variables.btnMinerClicked = false;
+        variables.btnCreuserClicked = false;
+
+    }
+
+    void MinerClicked()
+    {
+        Build.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.red;
+        variables.btnMinerClicked = true;
+        variables.btnClimbClicked = false;
+        variables.btnBlockClicked = false;
+        variables.btnPushClicked = false;
+        variables.btnDieClicked = false;
+        variables.btnActivateClicked = false;
+        variables.btnJeterClicked = false;
+        variables.btnCasserClicked = false;
+        variables.btnBuildClicked = false;
+        variables.btnCreuserClicked = false;
+    }
+
+    void CreuserClicked()
+    {
+        Build.GetComponent<Image>().color = Color.white;
+        Miner.GetComponent<Image>().color = Color.white;
+        Casser.GetComponent<Image>().color = Color.white;
+        Jeter.GetComponent<Image>().color = Color.white;
+        Activate.GetComponent<Image>().color = Color.white;
+        Die.GetComponent<Image>().color = Color.white;
+        Push.GetComponent<Image>().color = Color.white;
+        Block.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.white;
+        Climb.GetComponent<Image>().color = Color.white;
+        Creuser.GetComponent<Image>().color = Color.red;
+        variables.btnCreuserClicked = true;
+        variables.btnClimbClicked = false;
+        variables.btnBlockClicked = false;
+        variables.btnPushClicked = false;
+        variables.btnDieClicked = false;
+        variables.btnActivateClicked = false;
+        variables.btnJeterClicked = false;
+        variables.btnCasserClicked = false;
+        variables.btnBuildClicked = false;
+        variables.btnMinerClicked = false;
+    }
+
+
+    
     void OnTriggerStay2D(Collider2D other)
     {
         //Activate

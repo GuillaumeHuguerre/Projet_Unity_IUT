@@ -1,0 +1,423 @@
+fileFormatVersion: 2
+guid: 6c9574a5b708fea4abaf30b5fa568100
+timeCreated: 1497838343
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bloquer1_0
+    21300002: bloquer1_1
+    21300004: bloquer1_2
+    21300006: bloquer1_3
+    21300008: bloquer1_4
+    21300010: bloquer1_5
+    21300012: bloquer1_6
+    21300014: bloquer1_7
+    21300016: bloquer1_8
+    21300018: bloquer1_9
+    21300020: bloquer1_10
+    21300022: bloquer1_11
+    21300024: bloquer1_12
+    21300026: bloquer1_13
+    21300028: bloquer1_14
+    21300030: bloquer1_15
+    21300032: bloquer1_16
+    21300034: bloquer1_17
+    21300036: bloquer1_18
+    21300038: bloquer1_19
+    21300040: bloquer1_20
+    21300042: bloquer1_21
+    21300044: bloquer1_22
+    21300046: bloquer1_23
+    21300048: bloquer1_24
+    21300050: bloquer1_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bloquer1_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 34
+        width: 116
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_1
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 36
+        width: 116
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_2
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 36
+        width: 117
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_3
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 34
+        width: 116
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_4
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 35
+        width: 114
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_5
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 36
+        width: 110
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_6
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 36
+        width: 110
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_7
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 35
+        width: 109
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_8
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 33
+        width: 107
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_9
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 33
+        width: 106
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_10
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 33
+        width: 105
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_11
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 36
+        width: 103
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_12
+      rect:
+        serializedVersion: 2
+        x: 3286
+        y: 36
+        width: 102
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_13
+      rect:
+        serializedVersion: 2
+        x: 3560
+        y: 36
+        width: 99
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_14
+      rect:
+        serializedVersion: 2
+        x: 3817
+        y: 36
+        width: 119
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_15
+      rect:
+        serializedVersion: 2
+        x: 4074
+        y: 39
+        width: 144
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_16
+      rect:
+        serializedVersion: 2
+        x: 4334
+        y: 39
+        width: 185
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_17
+      rect:
+        serializedVersion: 2
+        x: 4595
+        y: 37
+        width: 223
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_18
+      rect:
+        serializedVersion: 2
+        x: 4859
+        y: 39
+        width: 253
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_19
+      rect:
+        serializedVersion: 2
+        x: 5126
+        y: 39
+        width: 271
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_20
+      rect:
+        serializedVersion: 2
+        x: 5397
+        y: 36
+        width: 273
+        height: 387
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_21
+      rect:
+        serializedVersion: 2
+        x: 6487
+        y: 33
+        width: 260
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_22
+      rect:
+        serializedVersion: 2
+        x: 6754
+        y: 33
+        width: 264
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_23
+      rect:
+        serializedVersion: 2
+        x: 5674
+        y: 38
+        width: 263
+        height: 382
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_24
+      rect:
+        serializedVersion: 2
+        x: 5941
+        y: 36
+        width: 268
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bloquer1_25
+      rect:
+        serializedVersion: 2
+        x: 6211
+        y: 34
+        width: 263
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

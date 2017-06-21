@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: 63bae93257efe7344933305c7ab579b8
+timeCreated: 1497840070
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pousser2_0
+    21300002: pousser2_1
+    21300004: pousser2_2
+    21300006: pousser2_3
+    21300008: pousser2_4
+    21300010: pousser2_5
+    21300012: pousser2_6
+    21300014: pousser2_7
+    21300016: pousser2_8
+    21300018: pousser2_9
+    21300020: pousser2_10
+    21300022: pousser2_11
+    21300024: pousser2_12
+    21300026: pousser2_13
+    21300028: pousser2_14
+    21300030: pousser2_15
+    21300032: pousser2_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pousser2_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 70
+        width: 148
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 69
+        width: 149
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_2
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 69
+        width: 148
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_3
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 69
+        width: 143
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_4
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 68
+        width: 137
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_5
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 68
+        width: 125
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_6
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 68
+        width: 130
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_7
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 71
+        width: 140
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_8
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 73
+        width: 147
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_9
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 73
+        width: 150
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_10
+      rect:
+        serializedVersion: 2
+        x: 2794
+        y: 75
+        width: 150
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_11
+      rect:
+        serializedVersion: 2
+        x: 3063
+        y: 79
+        width: 152
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_12
+      rect:
+        serializedVersion: 2
+        x: 3334
+        y: 78
+        width: 148
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_13
+      rect:
+        serializedVersion: 2
+        x: 3603
+        y: 77
+        width: 141
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_14
+      rect:
+        serializedVersion: 2
+        x: 3873
+        y: 55
+        width: 122
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_15
+      rect:
+        serializedVersion: 2
+        x: 4143
+        y: 76
+        width: 137
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pousser2_16
+      rect:
+        serializedVersion: 2
+        x: 4413
+        y: 73
+        width: 144
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

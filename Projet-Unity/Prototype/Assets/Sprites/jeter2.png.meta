@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: f1749a07d2d291e48ae040f1084b42b9
+timeCreated: 1497839818
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: jeter2_0
+    21300002: jeter2_1
+    21300004: jeter2_2
+    21300006: jeter2_3
+    21300008: jeter2_4
+    21300010: jeter2_5
+    21300012: jeter2_6
+    21300014: jeter2_7
+    21300016: jeter2_8
+    21300018: jeter2_9
+    21300020: jeter2_10
+    21300022: jeter2_11
+    21300024: jeter2_12
+    21300026: jeter2_13
+    21300028: jeter2_14
+    21300030: jeter2_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jeter2_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 77
+        width: 122
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_1
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 79
+        width: 131
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_2
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 81
+        width: 139
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_3
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 81
+        width: 148
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_4
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 82
+        width: 150
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_5
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 81
+        width: 133
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_6
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 81
+        width: 107
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_7
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 56
+        width: 90
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_8
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 66
+        width: 99
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_9
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 94
+        width: 122
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_10
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 92
+        width: 118
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_11
+      rect:
+        serializedVersion: 2
+        x: 3077
+        y: 83
+        width: 105
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_12
+      rect:
+        serializedVersion: 2
+        x: 3342
+        y: 75
+        width: 99
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_13
+      rect:
+        serializedVersion: 2
+        x: 3601
+        y: 69
+        width: 98
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_14
+      rect:
+        serializedVersion: 2
+        x: 3861
+        y: 69
+        width: 112
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jeter2_15
+      rect:
+        serializedVersion: 2
+        x: 4127
+        y: 71
+        width: 118
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

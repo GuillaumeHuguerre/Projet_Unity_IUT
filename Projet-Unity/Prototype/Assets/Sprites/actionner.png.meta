@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: 45388c636a17b5343aa620cde4aeac66
+timeCreated: 1497843513
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: actionner_0
+    21300002: actionner_1
+    21300004: actionner_2
+    21300006: actionner_3
+    21300008: actionner_4
+    21300010: actionner_5
+    21300012: actionner_6
+    21300014: actionner_7
+    21300016: actionner_8
+    21300018: actionner_9
+    21300020: actionner_10
+    21300022: actionner_11
+    21300024: actionner_12
+    21300026: actionner_13
+    21300028: actionner_14
+    21300030: actionner_15
+    21300032: actionner_16
+    21300034: actionner_17
+    21300036: actionner_18
+    21300038: actionner_19
+    21300040: actionner_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: actionner_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 71
+        width: 193
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 67
+        width: 189
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_2
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 64
+        width: 175
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_3
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 60
+        width: 157
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_4
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 53
+        width: 148
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_5
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 50
+        width: 150
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_6
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 47
+        width: 164
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_7
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 46
+        width: 178
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_8
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 46
+        width: 193
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_9
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 46
+        width: 206
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_10
+      rect:
+        serializedVersion: 2
+        x: 3418
+        y: 46
+        width: 206
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_11
+      rect:
+        serializedVersion: 2
+        x: 3754
+        y: 46
+        width: 206
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_12
+      rect:
+        serializedVersion: 2
+        x: 4091
+        y: 46
+        width: 203
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_13
+      rect:
+        serializedVersion: 2
+        x: 4428
+        y: 46
+        width: 202
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_14
+      rect:
+        serializedVersion: 2
+        x: 4768
+        y: 46
+        width: 196
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_15
+      rect:
+        serializedVersion: 2
+        x: 5105
+        y: 46
+        width: 196
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_16
+      rect:
+        serializedVersion: 2
+        x: 5438
+        y: 46
+        width: 196
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_17
+      rect:
+        serializedVersion: 2
+        x: 5775
+        y: 46
+        width: 196
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_18
+      rect:
+        serializedVersion: 2
+        x: 6109
+        y: 46
+        width: 195
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_19
+      rect:
+        serializedVersion: 2
+        x: 6445
+        y: 46
+        width: 196
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: actionner_20
+      rect:
+        serializedVersion: 2
+        x: 6779
+        y: 46
+        width: 195
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

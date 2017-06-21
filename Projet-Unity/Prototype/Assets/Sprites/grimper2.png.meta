@@ -1,0 +1,619 @@
+fileFormatVersion: 2
+guid: b97a2d30e55ad614fb5832ad15bc00cc
+timeCreated: 1497839618
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: grimper2_0
+    21300002: grimper2_1
+    21300004: grimper2_2
+    21300006: grimper2_3
+    21300008: grimper2_4
+    21300010: grimper2_5
+    21300012: grimper2_6
+    21300014: grimper2_7
+    21300016: grimper2_8
+    21300018: grimper2_9
+    21300020: grimper2_10
+    21300022: grimper2_11
+    21300024: grimper2_12
+    21300026: grimper2_13
+    21300028: grimper2_14
+    21300030: grimper2_15
+    21300032: grimper2_16
+    21300034: grimper2_17
+    21300036: grimper2_18
+    21300038: grimper2_19
+    21300040: grimper2_20
+    21300042: grimper2_21
+    21300044: grimper2_22
+    21300046: grimper2_23
+    21300048: grimper2_24
+    21300050: grimper2_25
+    21300052: grimper2_26
+    21300054: grimper2_27
+    21300056: grimper2_28
+    21300058: grimper2_29
+    21300060: grimper2_30
+    21300062: grimper2_31
+    21300064: grimper2_32
+    21300066: grimper2_33
+    21300068: grimper2_34
+    21300070: grimper2_35
+    21300072: grimper2_36
+    21300074: grimper2_37
+    21300076: grimper2_38
+    21300078: grimper2_39
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grimper2_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 24
+        width: 153
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_1
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 24
+        width: 153
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 29
+        width: 142
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_3
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 34
+        width: 142
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_4
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 40
+        width: 145
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_5
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 45
+        width: 146
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_6
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 50
+        width: 142
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_7
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 61
+        width: 148
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_8
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 66
+        width: 151
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_9
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 71
+        width: 153
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_10
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 82
+        width: 158
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_11
+      rect:
+        serializedVersion: 2
+        x: 3009
+        y: 82
+        width: 163
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_12
+      rect:
+        serializedVersion: 2
+        x: 3277
+        y: 77
+        width: 169
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_13
+      rect:
+        serializedVersion: 2
+        x: 3546
+        y: 66
+        width: 169
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_14
+      rect:
+        serializedVersion: 2
+        x: 3815
+        y: 61
+        width: 174
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_15
+      rect:
+        serializedVersion: 2
+        x: 4084
+        y: 55
+        width: 174
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_16
+      rect:
+        serializedVersion: 2
+        x: 4353
+        y: 50
+        width: 177
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_17
+      rect:
+        serializedVersion: 2
+        x: 4627
+        y: 45
+        width: 174
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_18
+      rect:
+        serializedVersion: 2
+        x: 4902
+        y: 45
+        width: 168
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_19
+      rect:
+        serializedVersion: 2
+        x: 5176
+        y: 40
+        width: 163
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_20
+      rect:
+        serializedVersion: 2
+        x: 5450
+        y: 40
+        width: 158
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_21
+      rect:
+        serializedVersion: 2
+        x: 5724
+        y: 45
+        width: 153
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_22
+      rect:
+        serializedVersion: 2
+        x: 5999
+        y: 50
+        width: 142
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_23
+      rect:
+        serializedVersion: 2
+        x: 6268
+        y: 55
+        width: 142
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_24
+      rect:
+        serializedVersion: 2
+        x: 6536
+        y: 61
+        width: 143
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_25
+      rect:
+        serializedVersion: 2
+        x: 6806
+        y: 66
+        width: 142
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_26
+      rect:
+        serializedVersion: 2
+        x: 7080
+        y: 77
+        width: 142
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_27
+      rect:
+        serializedVersion: 2
+        x: 7349
+        y: 87
+        width: 142
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_28
+      rect:
+        serializedVersion: 2
+        x: 7623
+        y: 77
+        width: 137
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_29
+      rect:
+        serializedVersion: 2
+        x: 7892
+        y: 71
+        width: 141
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_30
+      rect:
+        serializedVersion: 2
+        x: 8161
+        y: 71
+        width: 142
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_31
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 52
+        width: 142
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_32
+      rect:
+        serializedVersion: 2
+        x: 8693
+        y: 45
+        width: 148
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_33
+      rect:
+        serializedVersion: 2
+        x: 8962
+        y: 40
+        width: 148
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_34
+      rect:
+        serializedVersion: 2
+        x: 9231
+        y: 34
+        width: 150
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_35
+      rect:
+        serializedVersion: 2
+        x: 9505
+        y: 29
+        width: 147
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_36
+      rect:
+        serializedVersion: 2
+        x: 9775
+        y: 29
+        width: 147
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_37
+      rect:
+        serializedVersion: 2
+        x: 10043
+        y: 29
+        width: 148
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_38
+      rect:
+        serializedVersion: 2
+        x: 10307
+        y: 24
+        width: 153
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grimper2_39
+      rect:
+        serializedVersion: 2
+        x: 10576
+        y: 24
+        width: 153
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
