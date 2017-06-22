@@ -21,7 +21,7 @@ public class JeterScript : MonoBehaviour {
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(CircleCollider2D collision)
     {
         if (this.GetComponent<Actions>().isJeter && collision.gameObject.tag == "Player" && !collision.gameObject.GetComponent<Actions>().isBlock)
         {
