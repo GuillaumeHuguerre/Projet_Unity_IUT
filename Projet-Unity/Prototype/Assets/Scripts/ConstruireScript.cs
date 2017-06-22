@@ -6,6 +6,12 @@ public class ConstruireScript : MonoBehaviour {
     public GameObject objetdroite;
     public GameObject objetgauche;
     private Rigidbody2D rig;
+    Animator _anim;
+
+    private void Start()
+    {
+        _anim = this.GetComponent<Animator>();
+    }
 
     private void FixedUpdate()
     {
@@ -16,9 +22,10 @@ public class ConstruireScript : MonoBehaviour {
             StartCoroutine(Construire());
         }
     }
+  
 
 
-    IEnumerator Construire()
+        IEnumerator Construire()
     {
         
         int i = 3;
@@ -43,6 +50,10 @@ public class ConstruireScript : MonoBehaviour {
             this.GetComponent<MouvementScript>().speed = 1f;
             yield return new WaitForSeconds(1.2f);
             i--;
+            if (i==0)
+            {
+                _anim.SetBool("isBuilder", false);
+            }
         }
 
     }

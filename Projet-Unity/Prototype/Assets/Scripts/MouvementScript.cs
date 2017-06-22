@@ -66,7 +66,7 @@ public class MouvementScript : MonoBehaviour
         {
 
             //if (collision.contacts[0].normal == new Vector2(-1, 0) || collision.contacts[0].normal == new Vector2(1, 0))
-            if (collision.gameObject.tag=="Mur")
+            if (collision.gameObject.tag== "Mur")
             {
                 if (direction == true)
                 {

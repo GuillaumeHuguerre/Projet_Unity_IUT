@@ -30,7 +30,7 @@ public class Spawner : MonoBehaviour {
         Cx = _spawnedObj.bounds.center.x;
         Cy = _spawnedObj.bounds.center.y;
         Temps = constantes.TEMPS;
-        InvokeRepeating("CreateNewLemming", Temps, 3.0f);       
+        InvokeRepeating("CreateNewLemming", Temps, 5.0f);       
         nbrLemming = constantes.NBRLEMMINGS;
 
     }
